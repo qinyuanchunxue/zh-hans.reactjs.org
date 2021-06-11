@@ -50,6 +50,8 @@ npm start
 > 注意
 >
 > 第一行的 `npx` 不是拼写错误 —— 它是 [npm 5.2+ 附带的 package 运行工具](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b)。
+> 
+> 如果开局就报错：“npm ERR! code E404  npm ERR! 404 Not Found - GET https://registry.npmjs.com/creat-react-app - Not found”，这是因为没有全局安装creat-react-app这个脚手架造成的，执行命令 `npm install -g create-react-app`，然后再按教程走就可以了。[参考文档](https://segmentfault.com/a/1190000020056016)
 
 Create React App 不会处理后端逻辑或操纵数据库；它只是创建一个前端构建流水线（build pipeline），所以你可以使用它来配合任何你想使用的后端。它在内部使用 [Babel](https://babeljs.io/) 和 [webpack](https://webpack.js.org/)，但你无需了解它们的任何细节。
 
